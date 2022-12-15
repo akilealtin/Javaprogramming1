@@ -10,6 +10,9 @@ public class BMW extends Car {
     public void racing(){
         System.out.println(brand+" "+model+"is racing a car");
     }
+    public void start(){
+        System.out.println("call mechanic to jump start"+brand+" "+model);
+    }
 }
 /*
  BMW
