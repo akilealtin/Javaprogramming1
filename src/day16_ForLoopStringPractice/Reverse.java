@@ -2,9 +2,9 @@ package day16_ForLoopStringPractice;
 
 public class Reverse {
     public static void main(String[] args) {
-        String str="I love java, java is fun programming language";
+        String str = "I love java, java is fun programming language";
         //index:     0123456789
-        String result="";//contain the reversed version of str
+        String result = "";//contain the reversed version of str
         //noopS nedooW
        /*
        result+= str.charAt(11);//n
@@ -21,14 +21,10 @@ public class Reverse {
         result+=str.charAt(0);//w
 
         */
-        for(int i=str.length()-1; i>=0; i--){//i: index numbers of str (starting last index to index 0)
-                 result+= str.charAt(i);//adding each character to result
+        for (int i = str.length() - 1; i >= 0; i--) {//i: index numbers of str (starting last index to index 0)
+            result += str.charAt(i);//adding each character to result
         }
         System.out.println(result);
-
-
-
-
 
 
     }
