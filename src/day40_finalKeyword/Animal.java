@@ -6,17 +6,19 @@ public class Animal {
     private final String breed;
     private final char gender;
     private final String color;
-    private  String size;
+    private String size;
     private int age;
 
-
-    public Animal(String breed, char gender, String color) {
+    public Animal(String name, String breed, char gender, String color, String size, int age) {
+        this.name = name;
         this.breed = breed;
         this.gender = gender;
         this.color = color;
+        this.size = size;
+        this.age = age;
     }
 
-    ///----------------setters-----------------------------------------
+    ////----------Setters---------------------
 
     public String getName() {
         return name;
@@ -41,7 +43,9 @@ public class Animal {
     public int getAge() {
         return age;
     }
-    //---------------setters-------------------
+
+
+    //----------Setters---------------------
 
     public void setName(String name) {
         this.name = name;
@@ -54,13 +58,21 @@ public class Animal {
     public void setAge(int age) {
         this.age = age;
     }
-    //-----------setters---------------------
-    public  void eat(){
-        System.out.println(name+"is eating");
+
+
+    //----------Setters---------------------
+
+
+    public void eat(){
+        System.out.println(name+" is eating");
     }
+
     public final void drink(){
-        System.out.println(name +"is drinking water");
+        System.out.println(name+" is drinking water");
     }
+
+
+
 
 
 }
