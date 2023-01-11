@@ -1,4 +1,4 @@
-package day43.car;
+package day43_Abstraction.car;
 
 public abstract class Car {
     private final String brand, model;

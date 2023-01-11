@@ -1,4 +1,4 @@
-package day43;
+package day43_Abstraction;
 
 import java.util.Scanner;
 

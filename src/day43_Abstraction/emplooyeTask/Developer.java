@@ -1,4 +1,4 @@
-package day43.emplooyeTask;
+package day43_Abstraction.emplooyeTask;
 
 public  class Developer extends Employee {
     public Developer(String name, int age, char gender, int id, String jobTitle, double salary) {
