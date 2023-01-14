@@ -66,7 +66,11 @@ static {
 
     public String getColor() {
         return color;
+}
+    public final void drink(){
+        System.out.println(name+" is drinking");
     }
+
     public abstract void eat();
 
     @Override
