@@ -13,7 +13,7 @@ public class SetInterfacePractice {
         System.out.println("list = " + list);
         System.out.println(list.get(4));
         
-        Set<Integer>hashSet=new HashSet<>();
+        Set<Integer>hashSet=new HashSet<>(); //order is random
        hashSet.addAll(Arrays.asList(10,200,300,40,90));
         hashSet.addAll(Arrays.asList(10,200,300,40,90));
         hashSet.addAll(Arrays.asList(10,200,300,40,90));
@@ -25,7 +25,30 @@ public class SetInterfacePractice {
         System.out.println("hashSet = " + hashSet);
       //  System.out.println(hashSet.get(4)); // we can not use the index number
 
-       Set<Integer>linkedHashSet=new LinkedHashSet<>();
-       Set<Integer> treeSet= new TreeSet<>();
+        Set<Integer> linkedHashSet = new LinkedHashSet<>();//keeps the insertion order
+        linkedHashSet.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        linkedHashSet.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        linkedHashSet.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        linkedHashSet.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        linkedHashSet.addAll(Arrays.asList(10, 200, 300, 40, 90));
+        linkedHashSet.addAll(Arrays.asList(null,null,null));
+
+        System.out.println("linkedHashSet = " + linkedHashSet);
+        
+        
+        Set<Integer> treeSet= new TreeSet<>();//keeps sorted order,does not accept null
+        treeSet.addAll(Arrays.asList(10,20,30,40,90));
+        treeSet.addAll(Arrays.asList(10,20,30,40,90));
+        treeSet.addAll(Arrays.asList(10,20,30,40,90));
+        treeSet.addAll(Arrays.asList(10,20,30,40,90));
+       // treeSet.addAll(Arrays.asList(null,null,null));
+
+        System.out.println("treeSet = " + treeSet);
+        //   String str = null;
+        // System.out.println(str.charAt(0));
+
+
+
+
     }
 }
