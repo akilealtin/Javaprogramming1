@@ -49,7 +49,7 @@ public class IterablePractice {
             }
         }
         System.out.println(list3);
-         //lambda expression is much easier to do this task lambda removeif() method are added  after java 8
+         //lambda expression is much easier to do this KendiCalismalarim.task lambda removeif() method are added  after java 8
         System.out.println("-----------------------------------------------------");
         List<Integer>list4=new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
         list4.removeIf(each->each<4);//we pass the condition as an parametr to remove if method
